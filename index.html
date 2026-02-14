@@ -43,6 +43,9 @@
         color: #f8fafc;
         overflow-x: hidden;
       }
+      #root {
+        min-height: 100vh;
+      }
       .dark body {
         background-color: #020617;
       }
@@ -60,10 +63,6 @@
         background: rgba(0, 0, 0, 0.03);
         border: 1px solid rgba(0, 0, 0, 0.1);
       }
-      .floating-card {
-        transform-style: preserve-3d;
-        transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-      }
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -77,8 +76,6 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #6366f1;
       }
-      
-      /* New Custom Scrollbar for Modals */
       .custom-scrollbar::-webkit-scrollbar {
         width: 6px;
       }
@@ -103,12 +100,13 @@
     "lucide-react": "https://esm.sh/lucide-react@0.475.0?external=react",
     "framer-motion": "https://esm.sh/framer-motion@11.11.17?external=react,react-dom",
     "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.17.10?external=react,react-dom,three",
-    "@react-three/drei": "https://esm.sh/@react-three/drei@9.121.4?external=react,react-dom,three,@react-three/fiber,three-mesh-bvh"
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.121.4?bundle&external=react,react-dom,three,@react-three/fiber,three-mesh-bvh"
   }
 }
 </script>
   </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>
