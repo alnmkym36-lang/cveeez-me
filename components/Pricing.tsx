@@ -22,8 +22,8 @@ const Pricing = ({ lang, onStarterClick }: PricingProps) => {
           <p className="text-slate-500 dark:text-slate-400 text-xl font-medium">{t.subtitle}</p>
         </div>
         
-        {/* Adjusted Grid for 2 items */}
-        <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+        {/* Adjusted Grid for 3 items */}
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-10 max-w-7xl mx-auto items-center">
           {t.plans.map((plan: any, idx: number) => {
             const isRec = plan.recommended;
             
@@ -40,9 +40,9 @@ const Pricing = ({ lang, onStarterClick }: PricingProps) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className={`relative p-12 rounded-[3.5rem] flex flex-col transition-all duration-500 shadow-2xl ${
+                className={`relative p-8 lg:p-12 rounded-[3.5rem] flex flex-col transition-all duration-500 shadow-2xl h-full ${
                   isRec 
-                    ? 'bg-white dark:bg-slate-800 border-4 border-brand-primary scale-105 z-20 shadow-brand-primary/30' 
+                    ? 'bg-white dark:bg-slate-800 border-4 border-brand-primary scale-105 z-20 shadow-brand-primary/30 py-16' 
                     : 'glass dark:bg-slate-900/50 border-black/5 dark:border-white/10'
                 }`}
               >
@@ -63,7 +63,7 @@ const Pricing = ({ lang, onStarterClick }: PricingProps) => {
                 <ul className="space-y-6 mb-12 flex-grow">
                   {plan.features.map((feature: string, fIdx: number) => (
                     <li key={fIdx} className="flex items-start gap-4 text-slate-600 dark:text-slate-300">
-                      <Check className="text-brand-primary w-5 h-5 shrink-0" />
+                      <Check className="text-brand-primary w-5 h-5 shrink-0 mt-0.5" />
                       <span className="text-base font-bold">{feature}</span>
                     </li>
                   ))}

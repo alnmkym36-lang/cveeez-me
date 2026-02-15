@@ -132,7 +132,7 @@ export const translations = {
       items: [
         { 
           id: "ai-builder",
-          title: "AI CV Builder", 
+          title: "بناء سيرة ذاتية بالـ AI", 
           desc: "أداة سريعة وسهلة بتطلعلك مسودة احترافية في دقايق.", 
           cta: "اعرف أكتر",
           modalTitle: "ابني CV قوي في دقائق… بشكل ATS-friendly",
@@ -145,7 +145,7 @@ export const translations = {
         },
         { 
           id: "ats-opt",
-          title: "ATS Optimization", 
+          title: "تحسين الـ ATS", 
           desc: "بنراجع تنسيق الـ CV وكلمات المفتاح عشان يعدي الفلترة.", 
           cta: "اعرف أكتر",
           modalTitle: "خلّي الـ CV يعدّي فلترة الـ ATS بدون ما يبقى حشو",
@@ -158,7 +158,7 @@ export const translations = {
         },
         { 
           id: "cv-writing",
-          title: "Professional Writing", 
+          title: "كتابة سيرة ذاتية احترافية", 
           desc: "خبير بيقعد معاك ويصيغ كل تفصيلة في حياتك المهنية.", 
           cta: "اعرف أكتر",
           modalTitle: "CV مكتوب باحتراف… بمراجعة بشرية اختيارية",
@@ -171,7 +171,7 @@ export const translations = {
         },
         { 
           id: "cover-letter",
-          title: "Cover Letter", 
+          title: "كتابة خطاب تقديم (Cover Letter)", 
           desc: "خطاب مقنع ومخصص لكل وظيفة بتقدم عليها.", 
           cta: "اعرف أكتر",
           modalTitle: "Cover Letter يكمّل الـ CV… من غير كلام إنشائي",
@@ -184,7 +184,7 @@ export const translations = {
         },
         { 
           id: "linkedin-opt",
-          title: "LinkedIn Optimization", 
+          title: "تحسين حساب لينكدإن", 
           desc: "بنظبط بروفايلك عشان فرص الظهور للـ Recruiters تزيد.", 
           cta: "اعرف أكتر",
           modalTitle: "لينكدإن يبيع خبرتك… قبل ما الـ CV يتفتح",
@@ -197,7 +197,7 @@ export const translations = {
         },
         { 
           id: "portfolio",
-          title: "Portfolio Content", 
+          title: "محتوى البورتفوليو", 
           desc: "حوّل مشاريعَك لقصص قابلة للعرض والاقتناع.", 
           cta: "اعرف أكتر",
           modalTitle: "حوّل مشاريعَك لقصص… قابلة للعرض والاقتناع",
@@ -210,7 +210,7 @@ export const translations = {
         },
         { 
           id: "interview-prep",
-          title: "Interview Prep", 
+          title: "التحضير للمقابلات", 
           desc: "محاكاة للمقابلات الحقيقية عشان تروح وانت واثق.", 
           cta: "اعرف أكتر",
           modalTitle: "حضّر إجاباتك… وخلّي كلامك منظم وواثق",
@@ -223,7 +223,7 @@ export const translations = {
         },
         { 
           id: "keyword-pack",
-          title: "Keyword Pack", 
+          title: "حزمة الكلمات المفتاحية", 
           desc: "اعرف إيه اللي الشركات بتدور عليه وحطه صح.", 
           cta: "اعرف أكتر",
           modalTitle: "اعرف إيه اللي الشركات بتدور عليه… وحطه صح",
@@ -240,6 +240,18 @@ export const translations = {
       title: "باقات تناسب طموحاتك",
       subtitle: "استثمر في مستقبلك المهني بأسعار واضحة",
       plans: [
+        { 
+          name: "الأساسية (Basic)", 
+          price: "[X]", 
+          recommended: false, 
+          features: [
+            "سيرة ذاتية واحدة محسنة",
+            "متوافقة مع أنظمة ATS",
+            "تصدير PDF بجودة عالية",
+            "بدون علامة مائية"
+          ],
+          cta: "ابدأ الآن" 
+        },
         { 
           name: "المحترف (Pro)", 
           price: "[Y]", 
@@ -526,6 +538,18 @@ export const translations = {
       title: "Plans for Your Ambition",
       subtitle: "Invest in your career with transparent pricing",
       plans: [
+        { 
+          name: "Basic", 
+          price: "[X]", 
+          recommended: false, 
+          features: [
+            "1 Optimized Resume",
+            "ATS Compatible",
+            "High Quality PDF Export",
+            "No Watermark"
+          ],
+          cta: "Start Now" 
+        },
         { 
           name: "Pro", 
           price: "[Y]", 
