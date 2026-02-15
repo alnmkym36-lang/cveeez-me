@@ -240,19 +240,18 @@ export const translations = {
       title: "باقات تناسب طموحاتك",
       subtitle: "استثمر في مستقبلك المهني بأسعار واضحة",
       plans: [
-        { name: "البداية", price: "[X]", cta: "ابدأ مجاناً" },
         { name: "المحترف", price: "[Y]", cta: "اشترك دلوقتى" },
         { name: "المتميز", price: "[Z]", cta: "تواصل معنا" }
       ]
     },
     leadForm: {
-      title: "ابدأ بناء سيرتك مجاناً",
-      subtitle: "سجل بياناتك وهنتواصل معاك فوراً لبدء العمل على ملفك الاحترافي.",
+      title: "ابدأ بناء سيرتك الآن",
+      subtitle: "سجل بياناتك وسيتم تحويلك للواتساب لبدء العمل على ملفك.",
       name: "الاسم الكامل",
       email: "البريد الإلكتروني / رقم الموبايل",
       role: "الوظيفة المستهدفة",
-      submit: "بدء البناء الآن",
-      success: "تم الإرسال بنجاح! فريق سيفيز هيتواصل معاك قريب جداً."
+      submit: "إرسال عبر واتساب",
+      success: "جاري التحويل للواتساب..."
     },
     serviceModal: {
       formTitle: "اطلب الخدمة الآن",
@@ -261,6 +260,68 @@ export const translations = {
       needs: "اللي محتاجينه منك:",
       whatsapp: "كلّمنا واتساب",
       crossSell: "ممكن تحتاج كمان"
+    },
+    privacy: {
+      title: "سياسة الخصوصية",
+      content: "نحن في سيفيز نلتزم بحماية خصوصيتك. جميع البيانات التي تشاركها معنا، بما في ذلك سيرتك الذاتية ومعلوماتك الشخصية، يتم استخدامها فقط لغرض تقديم الخدمة المطلوبة. لا نقوم بمشاركة بياناتك مع أي طرف ثالث دون موافقتك الصريحة. يتم تأمين جميع الملفات المرسلة وحذفها من خوادمنا بشكل دوري."
+    },
+    faqList: {
+      title: "الأسئلة الشائعة",
+      subtitle: "كل اللي بيدور في بالك عن خدماتنا",
+      items: [
+        {
+          question: "يعني إيه ATS؟",
+          answer: "الـ ATS هو اختصار لـ Applicant Tracking System، وهو برنامج الشركات بتستخدمه عشان تفرز السير الذاتية آلياً قبل ما الموظف يشوفها. لو الـ CV بتاعك مش متوافق معاه، غالباً هيترفض فوراً."
+        },
+        {
+          question: "السيرة بتخلص في قد إيه؟",
+          answer: "بالذكاء الاصطناعي بتخلص في دقايق. لو طلبت مراجعة بشرية بتاخد من [مدة] لـ [مدة] أيام عمل."
+        },
+        {
+          question: "ينفع أعدل في الـ CV بعد ما أخلصه؟",
+          answer: "طبعاً، لو معاك باقة الـ Pro أو Premium تقدر تعدل وتحمل الـ CV بتاعك في أي وقت."
+        },
+        {
+          question: "بيدعم لغات إيه؟",
+          answer: "بندعم اللغة العربية والإنجليزية بشكل أساسي، مع مراعاة القواعد اللغوية لكل لغة."
+        },
+        {
+          question: "هل بياناتي في أمان؟",
+          answer: "بياناتك مشفرة ومحمية بالكامل، ومحدش بيشوفها غيرك أو الخبير اللي بيراجع ملفك لو طلبت ده."
+        },
+        {
+          question: "إيه اللي محتاج أقدمه عشان تبدأوا؟",
+          answer: "محتاجين منك ملفك القديم أو مجرد معلومات عن دراستك، خبراتك، والوظيفة اللي بتطمح ليها."
+        },
+        {
+          question: "هل فيه ضمان وظيفة؟",
+          answer: "إحنا بنضمنلك إن الـ CV بتاعك هيكون بأعلى جودة احترافية وتجاوز الـ ATS، وده بيزود فرص قبولك بشكل كبير جداً، لكن التوفيق في الوظيفة بيعتمد على مهاراتك وأداءك في المقابلة."
+        },
+        {
+          question: "هل الخدمة مناسبة لكل المجالات؟",
+          answer: "أيوة، من أول الطب والهندسة لحد التسويق والخدمات، عندنا نماذج وكلمات مفتاحية لكل مجال."
+        }
+      ]
+    },
+    testimonials: {
+      title: "ناس زيّك وصلوا لمرحلة المقابلة",
+      items: [
+        {
+          name: "أحمد م.",
+          role: "مهندس برمجيات",
+          content: "كنت بقدم في شركات كتير ومحدش بيرد، بعد ما استخدمت سيفيز، جالي 3 مقابلات في أول أسبوع!"
+        },
+        {
+          name: "سارة ع.",
+          role: "مديرة تسويق",
+          content: "الـ Cover Letter كان هو السر. الكلام كان منسق جداً وخلاني أبان محترفة من أول سطر."
+        },
+        {
+          name: "محمد ح.",
+          role: "خريج جديد",
+          content: "مبنتش عارف أبدأ منين، الأداة ساعدتني أرتب أفكاري وأطلع CV يملى العين رغم قلة خبرتي."
+        }
+      ]
     }
   },
   en: {
@@ -335,16 +396,107 @@ export const translations = {
       items: [
         { 
           id: "ai-builder",
-          title: "AI Resume Builder", 
+          title: "AI CV Builder", 
           desc: "Fast and easy tool generating professional drafts in minutes.", 
           cta: "Learn More",
           modalTitle: "Build a Strong CV in Minutes… ATS-friendly",
-          modalDesc: "Enter your data, choose your target job, and we'll generate a clear, organized CV.",
+          modalDesc: "Enter your data, choose your target job, and we'll generate a clear, organized CV. Strong language, measurable achievements, and proper keywords.",
           includes: ["Clean templates", "Achievement crafting", "Keyword suggestions", "Summary optimization", "PDF Export"],
           suitableFor: "Fresh grads + fast updates.",
           requirements: "Target job title + key skills.",
           primaryCTA: "Start Building",
           crossSell: ["ats-opt", "cover-letter"]
+        },
+        { 
+          id: "ats-opt",
+          title: "ATS Optimization", 
+          desc: "We review formatting and keywords to pass the filters.", 
+          cta: "Learn More",
+          modalTitle: "Make Your CV Pass ATS Without Fluff",
+          modalDesc: "We optimize formatting, structure, and keywords to ensure readability for both bots and humans.",
+          includes: ["Header/Section formatting check", "Keyword optimization without stuffing", "Goal-oriented section ordering", "Bullet point strengthening", "Converting generic phrases to achievements"],
+          suitableFor: "Anyone applying without getting responses.",
+          requirements: "Current CV + Job description (if any).",
+          primaryCTA: "Upload for Optimization",
+          crossSell: ["cv-writing", "keyword-pack"]
+        },
+        { 
+          id: "cv-writing",
+          title: "Professional Writing", 
+          desc: "An expert crafts every detail of your career story.", 
+          cta: "Learn More",
+          modalTitle: "Professionally Written CV… With Optional Human Review",
+          modalDesc: "Need stronger phrasing and sharper details? We rebuild your career story customized for your target industry.",
+          includes: ["Data collection form/interview", "Full structure rebuild", "Strong achievement crafting", "Target role customization", "Final linguistic review"],
+          suitableFor: "Managers + Career changers + International applicants.",
+          requirements: "Basic info + Direct contact with expert.",
+          primaryCTA: "Order Professional Writing",
+          crossSell: ["linkedin-opt", "interview-prep"]
+        },
+        { 
+          id: "cover-letter",
+          title: "Cover Letter", 
+          desc: "Persuasive letter customized for every job application.", 
+          cta: "Learn More",
+          modalTitle: "Cover Letter That Complements Your CV",
+          modalDesc: "We write a concise, persuasive letter linking your experience to job requirements and highlighting your value.",
+          includes: ["Job-specific version", "Strong opening + Clear value", "Respectful CTA", "Short and long versions (Optional)"],
+          suitableFor: "Those wanting to impress HR with a custom message.",
+          requirements: "Job link/text + Current CV.",
+          primaryCTA: "Write My Cover Letter",
+          crossSell: ["cv-writing", "linkedin-opt"]
+        },
+        { 
+          id: "linkedin-opt",
+          title: "LinkedIn Optimization", 
+          desc: "Optimizing your profile to increase recruiter visibility.", 
+          cta: "Learn More",
+          modalTitle: "LinkedIn Selling Your Experience… Before CV is Opened",
+          modalDesc: "We optimize Headline, About, and Experience sections with proper keywords to boost recruiter reach.",
+          includes: ["Search-optimized Headline", "Strong About section (Story + Value)", "Rewriting experience as achievements", "Skills + Keywords by industry", "Featured & Project suggestions"],
+          suitableFor: "Anyone actively looking for jobs on LinkedIn.",
+          requirements: "Profile link + Target job title.",
+          primaryCTA: "Optimize My Profile",
+          crossSell: ["cv-writing", "interview-prep"]
+        },
+        { 
+          id: "portfolio",
+          title: "Portfolio Content", 
+          desc: "Turn your projects into convincing stories.", 
+          cta: "Learn More",
+          modalTitle: "Turn Your Projects Into Convincing Stories",
+          modalDesc: "We write Case Studies ready for display: Problem → Your Role → Solution → Results, tailored for interviews.",
+          includes: ["Project page structuring", "Clear result phrasing", "Content for Website/Behance/Notion", "Image/Shot suggestions"],
+          suitableFor: "Designers, Developers, and Content Writers.",
+          requirements: "Project details + Results achieved.",
+          primaryCTA: "Prepare Portfolio Content",
+          crossSell: ["linkedin-opt", "ats-opt"]
+        },
+        { 
+          id: "interview-prep",
+          title: "Interview Prep", 
+          desc: "Real interview simulation to boost your confidence.", 
+          cta: "Learn More",
+          modalTitle: "Prepare Your Answers… Be Organized and Confident",
+          modalDesc: "We prepare you with expected questions, STAR answers, and a review of strengths/weaknesses.",
+          includes: ["Common + Technical questions", "STAR answers ready to customize", "30-60s Personal Pitch", "CV point review", "Negotiation Tips (Optional)"],
+          suitableFor: "Anyone with an upcoming interview.",
+          requirements: "Job description + CV copy.",
+          primaryCTA: "Start Interview Prep",
+          crossSell: ["cv-writing", "linkedin-opt"]
+        },
+        { 
+          id: "keyword-pack",
+          title: "Keyword Pack", 
+          desc: "Know exactly what companies are looking for.", 
+          cta: "Learn More",
+          modalTitle: "Know What Companies Want… And Place It Right",
+          modalDesc: "We provide a keyword list (Skills/Tools/Responsibilities) for a specific role, and where to place them.",
+          includes: ["Keyword list by Job Description", "Recommended sections placement", "Easy-to-apply checklist", "Strong bullet examples using keywords"],
+          suitableFor: "DIY users who need the right direction.",
+          requirements: "Target job title.",
+          primaryCTA: "Get Keyword Pack",
+          crossSell: ["ats-opt", "cv-writing"]
         }
       ]
     },
@@ -352,19 +504,18 @@ export const translations = {
       title: "Plans for Your Ambition",
       subtitle: "Invest in your career with transparent pricing",
       plans: [
-        { name: "Starter", price: "[X]", cta: "Start Free" },
         { name: "Pro", price: "[Y]", cta: "Subscribe Now" },
         { name: "Premium", price: "[Z]", cta: "Contact Us" }
       ]
     },
     leadForm: {
-      title: "Start Building for Free",
-      subtitle: "Enter your details and we'll contact you immediately.",
+      title: "Start Building Now",
+      subtitle: "Enter your details and we'll redirect you to WhatsApp to start.",
       name: "Full Name",
       email: "Email / Phone",
       role: "Target Job Role",
-      submit: "Start Building Now",
-      success: "Sent successfully! The CVEEEZ team will contact you soon."
+      submit: "Send via WhatsApp",
+      success: "Redirecting to WhatsApp..."
     },
     serviceModal: {
       formTitle: "Order Now",
@@ -373,6 +524,68 @@ export const translations = {
       needs: "What we need:",
       whatsapp: "Contact via WhatsApp",
       crossSell: "You might also need"
+    },
+    privacy: {
+      title: "Privacy Policy",
+      content: "At CVEEEZ, we are committed to protecting your privacy. All data you share with us, including your CV and personal information, is used solely for the purpose of providing the requested service. We do not share your data with any third party without your explicit consent. All submitted files are secured and deleted from our servers periodically."
+    },
+    faqList: {
+      title: "Frequently Asked Questions",
+      subtitle: "Everything you need to know about our services",
+      items: [
+        {
+          question: "What is ATS?",
+          answer: "ATS stands for Applicant Tracking System, a software companies use to filter resumes automatically. If your CV isn't compatible, it gets rejected instantly."
+        },
+        {
+          question: "How long does it take?",
+          answer: "AI builds it in minutes. Human review takes [Duration] to [Duration] business days."
+        },
+        {
+          question: "Can I edit the CV later?",
+          answer: "Yes, Pro and Premium plans allow unlimited edits and downloads."
+        },
+        {
+          question: "What languages are supported?",
+          answer: "We fully support Arabic and English, ensuring grammatical correctness for each."
+        },
+        {
+          question: "Is my data safe?",
+          answer: "Your data is encrypted. Only you (and your reviewer if requested) can access it."
+        },
+        {
+          question: "What do I need to provide?",
+          answer: "Your old CV or details about your education, experience, and target role."
+        },
+        {
+          question: "Is there a job guarantee?",
+          answer: "We guarantee a high-quality, ATS-friendly CV that boosts your chances, but the job offer depends on your skills and interview."
+        },
+        {
+          question: "Is the service suitable for all fields?",
+          answer: "Yes, from Engineering to Marketing, we have templates and keywords for every industry."
+        }
+      ]
+    },
+    testimonials: {
+      title: "People like you made it to interviews",
+      items: [
+        {
+          name: "Ahmed M.",
+          role: "Software Engineer",
+          content: "Applied to many companies with no luck. After CVEEEZ, I got 3 interviews in a week!"
+        },
+        {
+          name: "Sara A.",
+          role: "Marketing Manager",
+          content: "The Cover Letter was the secret. Professional and organized."
+        },
+        {
+          name: "Mohamed H.",
+          role: "Fresh Graduate",
+          content: "Didn't know where to start. The tool helped me create an impressive CV despite having no experience."
+        }
+      ]
     }
   }
 };

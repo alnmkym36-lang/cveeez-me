@@ -71,7 +71,18 @@ const Scene3D = () => {
   return (
     <div className="absolute inset-0 z-0 pointer-events-none opacity-60 dark:opacity-100">
       <Suspense fallback={null}>
-        <Canvas dpr={[1, 2]} gl={{ antialias: true, alpha: true }}>
+        <Canvas 
+          dpr={[1, 2]} 
+          gl={{ 
+            antialias: true, 
+            alpha: true,
+            preserveDrawingBuffer: true,
+            powerPreference: "high-performance" 
+          }}
+          onCreated={({ gl }) => {
+            gl.domElement.style.touchAction = 'none';
+          }}
+        >
           <Scene />
         </Canvas>
       </Suspense>
