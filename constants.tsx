@@ -17,7 +17,7 @@ import {
   MessagesSquare,
   Key
 } from 'lucide-react';
-import { Feature, PricingPlan, FAQItem, Testimonial } from './types';
+import { Feature, FAQItem, Testimonial } from './types';
 
 export const HERO_CONTENT = {
   h1: "سيفيز يخلي الـ CV بتاعك يتقبل من أول مرة",
@@ -92,29 +92,3 @@ export const SERVICE_ICONS: Record<string, any> = {
   'interview-prep': MessagesSquare,
   'keyword-pack': Key
 };
-
-export const PRICING: PricingPlan[] = [
-  {
-    name: "المحترف (Pro)",
-    price: "[Y]",
-    recommended: true,
-    features: [
-      "سير ذاتية غير محدودة",
-      "تحليل ATS متقدم",
-      "خطاب تغطية (Cover Letter)",
-      "تعديلات ذكية للكلمات المفتاحية"
-    ],
-    cta: "اشترك دلوقتى"
-  },
-  {
-    name: "المتميز (Premium)",
-    price: "[Z]",
-    features: [
-      "كل مميزات الـ Pro",
-      "مراجعة من خبير بشري",
-      "تحسين بروفايل LinkedIn",
-      "جلسة تحضير مقابلة (30 دقيقة)"
-    ],
-    cta: "تواصل معنا"
-  }
-];

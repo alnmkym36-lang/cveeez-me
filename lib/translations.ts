@@ -240,8 +240,30 @@ export const translations = {
       title: "باقات تناسب طموحاتك",
       subtitle: "استثمر في مستقبلك المهني بأسعار واضحة",
       plans: [
-        { name: "المحترف", price: "[Y]", cta: "اشترك دلوقتى" },
-        { name: "المتميز", price: "[Z]", cta: "تواصل معنا" }
+        { 
+          name: "المحترف (Pro)", 
+          price: "[Y]", 
+          recommended: true, 
+          features: [
+            "سير ذاتية غير محدودة",
+            "تحليل ATS متقدم",
+            "خطاب تغطية (Cover Letter)",
+            "تعديلات ذكية للكلمات المفتاحية"
+          ],
+          cta: "اشترك دلوقتى" 
+        },
+        { 
+          name: "المتميز (Premium)", 
+          price: "[Z]", 
+          recommended: false, 
+          features: [
+            "كل مميزات الـ Pro",
+            "مراجعة من خبير بشري",
+            "تحسين بروفايل LinkedIn",
+            "جلسة تحضير مقابلة (30 دقيقة)"
+          ],
+          cta: "تواصل معنا" 
+        }
       ]
     },
     leadForm: {
@@ -504,8 +526,30 @@ export const translations = {
       title: "Plans for Your Ambition",
       subtitle: "Invest in your career with transparent pricing",
       plans: [
-        { name: "Pro", price: "[Y]", cta: "Subscribe Now" },
-        { name: "Premium", price: "[Z]", cta: "Contact Us" }
+        { 
+          name: "Pro", 
+          price: "[Y]", 
+          recommended: true, 
+          features: [
+            "Unlimited Resumes",
+            "Advanced ATS Analysis",
+            "Cover Letter",
+            "Smart Keyword Adjustments"
+          ],
+          cta: "Subscribe Now" 
+        },
+        { 
+          name: "Premium", 
+          price: "[Z]", 
+          recommended: false, 
+          features: [
+            "All Pro Features",
+            "Human Expert Review",
+            "LinkedIn Profile Optimization",
+            "Interview Prep Session (30 mins)"
+          ],
+          cta: "Contact Us" 
+        }
       ]
     },
     leadForm: {

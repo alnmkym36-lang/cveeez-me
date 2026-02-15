@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PRICING } from '../constants';
 import { Check, Zap } from 'lucide-react';
 import Button from './ui/Button';
 import { translations } from '../lib/translations';
@@ -25,9 +24,8 @@ const Pricing = ({ lang, onStarterClick }: PricingProps) => {
         
         {/* Adjusted Grid for 2 items */}
         <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-          {t.plans.map((plan, idx) => {
-            const originalPlan = PRICING[idx]; // Arrays are synced in constants and translations (both have 2 items now)
-            const isRec = originalPlan?.recommended;
+          {t.plans.map((plan: any, idx: number) => {
+            const isRec = plan.recommended;
             
             const planMessage = lang === 'ar' 
               ? `السلام عليكم، أريد الاشتراك في باقة "${plan.name}" بسعر ${plan.price} ج.م`
@@ -63,7 +61,7 @@ const Pricing = ({ lang, onStarterClick }: PricingProps) => {
                 </div>
                 
                 <ul className="space-y-6 mb-12 flex-grow">
-                  {originalPlan?.features.map((feature, fIdx) => (
+                  {plan.features.map((feature: string, fIdx: number) => (
                     <li key={fIdx} className="flex items-start gap-4 text-slate-600 dark:text-slate-300">
                       <Check className="text-brand-primary w-5 h-5 shrink-0" />
                       <span className="text-base font-bold">{feature}</span>
